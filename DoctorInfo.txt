@@ -1,0 +1,4 @@
+Doctors' information
+
+Name: Doctor0, Surname: surname0, Mobile Number: 00000, Date of Birth: , Medical Licence Number: 00000, Specialization: specialisation0
+Name: Doctor1, Surname: surname1, Mobile Number: 00001, Date of Birth: , Medical Licence Number: 00001, Specialization: specialisation1
