@@ -1,3 +1,0 @@
-Name: Doctor 0 Surname: surname 0 Mobile Number: 00000Date of Birth:  Medical Licence Number: 00000 Specialization: specialisation 0
-Name: Doctor 1 Surname: surname 1 Mobile Number: 00001Date of Birth:  Medical Licence Number: 00001 Specialization: specialisation 1
-Name: Doctor 2 Surname: surname 2 Mobile Number: 00002Date of Birth:  Medical Licence Number: 00002 Specialization: specialisation 2

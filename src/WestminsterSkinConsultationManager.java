@@ -3,6 +3,9 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 
 public class WestminsterSkinConsultationManager implements SkinConsultationManager {
@@ -122,7 +125,7 @@ public class WestminsterSkinConsultationManager implements SkinConsultationManag
                 doctor[i] = null;
                 break;
             }
-        }     
+        }
         for (int i = 0; i < doctor.length; i++) {
             if (!(doctor[i] == null)) {
                 availableDoctorsCount += 1;
@@ -131,6 +134,20 @@ public class WestminsterSkinConsultationManager implements SkinConsultationManag
         }
         System.out.println("Available doctor count is:" + availableDoctorsCount);
     }
+
+    // public void printAlphabeticalDoctors() {
+
+    //     // Collections.sort(Arrays.asList(doctor), new Comparator<Doctor>() {
+
+    //     Comparator<Doctor> nameAgeComparator = new NameComparator();
+    //     Collections.sort(Arrays.asList(doctor), nameAgeComparator);
+
+    //     System.out.println("Sorted people:");
+    //     for (Person person : doctor) {
+    //         System.out.println(person);
+    //     }
+
+    // }
 
     public void printDoctors() {
 
@@ -197,7 +214,7 @@ public class WestminsterSkinConsultationManager implements SkinConsultationManag
             int count = 0;
             Date dob = new Date();
             while ((userInput = br.readLine()) != null) {
-                String[] userInputParts = userInput.replaceAll("\\s","").split(",|:");
+                String[] userInputParts = userInput.replaceAll("\\s", "").split(",|:");
 
                 // set dob if the date is null in the file
                 if (userInputParts[7] == null) {
@@ -211,6 +228,7 @@ public class WestminsterSkinConsultationManager implements SkinConsultationManag
             br.close();
             System.out.println("Data reading completed...");
         } catch (IOException e) {
+            System.out.println("Unnable to read file: DoctorInfo.txt");
             e.printStackTrace();
         }
 
