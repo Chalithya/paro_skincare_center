@@ -28,11 +28,11 @@ public class Doctor extends Person {
         this.specialisation = specialisation;
     }
 
-    // Create a Comparator to compare Doctor objects by name
-   public static Comparator<Doctor> doctorNameComparator = new Comparator<Doctor>() {
-        @Override
-        public int compare(Doctor d1, Doctor d2) {
-            return d1.getName().compareTo(d2.getName());
-        }
-    };
+//     // Create a Comparator to compare Doctor objects by name
+//    public static Comparator<Doctor> doctorNameComparator = new Comparator<Doctor>() {
+//         @Override
+//         public int compare(Doctor d1, Doctor d2) {
+//             return d1.getName().compareTo(d2.getName());
+//         }
+//     };
 }

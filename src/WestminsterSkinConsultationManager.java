@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
+import java.util.List;
 
 public class WestminsterSkinConsultationManager implements SkinConsultationManager {
 
@@ -148,6 +149,15 @@ public class WestminsterSkinConsultationManager implements SkinConsultationManag
     //     }
 
     // }
+
+    public List<Doctor> getAllDoctors(){
+
+    //     // System.out.println("start");
+    //     // System.out.println(Arrays.asList(doctor));
+    //     //Populate the list with data
+    //     //Access a repository to retrieve the doctor data and populate the list
+        return Arrays.asList(doctor);
+        }
 
     public void printDoctors() {
 

@@ -1,14 +1,14 @@
 import java.util.Date;
 
-import ui.WelcomeScreen;
 public class Main {
     public static void main(String[] args) {
 
         // Date dateOfBirth = new Date("2021/10/11");
 
         WestminsterSkinConsultationManager wsm = new WestminsterSkinConsultationManager();
-        // wsm.menu();
-        // wsm.readData();
+        // // wsm.menu();
+        wsm.readData();
+        // wsm.getAllDoctors();
         // wsm.printDoctors();
         // wsm.printAlphabeticalDoctors();
         
@@ -23,7 +23,9 @@ public class Main {
             // wsm.printDoctors();
 
             // Frontend only...................................................................................
-            new WelcomeScreen();
+            new UiWelcomeScreen(wsm.getAllDoctors());
+            // new DoctorTable();
+            // new DoctorTable(wsm.getAllDoctors());
 
     }
 
