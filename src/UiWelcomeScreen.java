@@ -36,6 +36,14 @@ public class UiWelcomeScreen extends JFrame {
             }
         });
 
+          // ActionListener for the docBookingbutton button to load table
+          docBookingbutton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                new UiUserDetailsForm(doctors);
+                // myTable.setVisible(true);
+            }
+        });
+
         // add components to the frame
         add(welcomeLabel, BorderLayout.NORTH);
         add(docTablebutton);

@@ -138,26 +138,17 @@ public class WestminsterSkinConsultationManager implements SkinConsultationManag
 
     // public void printAlphabeticalDoctors() {
 
-    //     // Collections.sort(Arrays.asList(doctor), new Comparator<Doctor>() {
+    // // Collections.sort(Arrays.asList(doctor), new Comparator<Doctor>() {
 
-    //     Comparator<Doctor> nameAgeComparator = new NameComparator();
-    //     Collections.sort(Arrays.asList(doctor), nameAgeComparator);
+    // Comparator<Doctor> nameAgeComparator = new NameComparator();
+    // Collections.sort(Arrays.asList(doctor), nameAgeComparator);
 
-    //     System.out.println("Sorted people:");
-    //     for (Person person : doctor) {
-    //         System.out.println(person);
-    //     }
-
+    // System.out.println("Sorted people:");
+    // for (Person person : doctor) {
+    // System.out.println(person);
     // }
 
-    public List<Doctor> getAllDoctors(){
-
-    //     // System.out.println("start");
-    //     // System.out.println(Arrays.asList(doctor));
-    //     //Populate the list with data
-    //     //Access a repository to retrieve the doctor data and populate the list
-        return Arrays.asList(doctor);
-        }
+    // }
 
     public void printDoctors() {
 
@@ -243,5 +234,23 @@ public class WestminsterSkinConsultationManager implements SkinConsultationManag
         }
 
     }
+
+    public List<Doctor> getAllDoctors() {
+
+        // // System.out.println("start");
+        // // System.out.println(Arrays.asList(doctor));
+        // //Populate the list with data
+        // //Access a repository to retrieve the doctor data and populate the list
+        return Arrays.asList(doctor);
+    }
+
+    // public String getAllDoctorNames(){
+    //     String[] myArray = new String[10];
+
+    //     for(Doctor doc: doctor){
+    //         myArray.ap
+    //     }
+    //     return 
+    // }
 
 }
