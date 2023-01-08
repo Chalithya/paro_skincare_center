@@ -23,9 +23,9 @@ public class UiUserDetailsForm extends JFrame implements ActionListener {
         setTitle("Consultaions");
         setLocationRelativeTo(null);
 
-        headerLabel = new JLabel("Consultation Details Form");
-        headerLabel.setForeground(Color.blue);
-        headerLabel.setFont(new Font("Serif", Font.BOLD, 20));
+        headerLabel = new JLabel("Patients Details Form" ,JLabel.CENTER);
+        headerLabel.setForeground(new Color(4, 133, 150));
+        headerLabel.setFont(new Font("Serif", Font.BOLD, 25));
 
         nameLabel = new JLabel("Name:");
         surnameLabel = new JLabel("Surname:");
@@ -66,11 +66,11 @@ public class UiUserDetailsForm extends JFrame implements ActionListener {
         doctorLabel.setBounds(80, 270, 200, 20);
         dateLabel.setBounds(80, 310, 200, 20);
 
-        nameField.setBounds(220, 70, 200, 20);
-        surnameField.setBounds(220, 110, 200, 20);
-        dobField.setBounds(220, 150, 200, 20);
-        mobileField.setBounds(220, 190, 200, 20);
-        nicField.setBounds(220, 230, 200, 20);
+        nameField.setBounds(220, 70, 400, 25);
+        surnameField.setBounds(220, 110, 400, 25);
+        dobField.setBounds(220, 150, 400, 25);
+        mobileField.setBounds(220, 190, 400, 25);
+        nicField.setBounds(220, 230, 400, 25);
         doctorPicker.setBounds(220, 270, 200, 20);
         // nameLabel.setBounds(80, 70, 200, 30);
         // emaileLabel.setBounds(80, 110, 200, 30);
@@ -80,7 +80,7 @@ public class UiUserDetailsForm extends JFrame implements ActionListener {
         // emailField.setBounds(300, 110, 200, 30);
         // p1.setBounds(300, 150, 200, 30);
         // tf3.setBounds(300, 190, 200, 30);
-        submitButton.setBounds(150, 500, 100, 30);
+        submitButton.setBounds(300, 500, 100, 30);
 
         add(headerLabel);
         add(nameLabel);
