@@ -57,6 +57,7 @@ public class WelcomeScreen extends JFrame {
         // add components to the frame
         add(welcomeLabel, BorderLayout.CENTER);
 
+
         // set visibility
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

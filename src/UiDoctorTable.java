@@ -12,9 +12,14 @@ public class UiDoctorTable {
 
 		// Create a new JTable Object
 		JTable table = new JTable();
+//		int width = 100;
+//		int height = 200;
+//		table.setPreferredSize(new Dimension(width, height));
+//		table.setPreferredSize(new Dimension(300,300));
 
 		// Create the DefaultTableModel
 		DefaultTableModel model = new DefaultTableModel();
+
 
 		// Set Column Titles to the Table Model
 		model.setColumnIdentifiers(new Object[] { 
@@ -22,7 +27,7 @@ public class UiDoctorTable {
 			"Surname", 
 			"Date of Birth", 
 			"Mobile Number", 
-			"Medical Licence No."  
+			"Medical Licence No"
 		});
 
 		// Set the Table Model data to the JTable
@@ -46,7 +51,7 @@ public class UiDoctorTable {
 
 		// Display the Table
 		JFrame frame = new JFrame("Doctors List");
-		frame.getContentPane().setLayout(new FlowLayout());
+//		frame.getContentPane().setLayout(new FlowLayout());
 		frame.getContentPane().add(new JScrollPane(table));
 		frame.setSize(400,400);
 		frame.setLocationRelativeTo(null); 
