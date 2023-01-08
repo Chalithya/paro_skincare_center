@@ -19,7 +19,7 @@ public class UiWelcomeScreen extends JFrame {
 
         // Create a new GridLayout with 4 rows and 1 column
         GridLayout layout = new GridLayout(4, 1);
-    
+
         // Set the layout of the frame to the GridLayout
         setLayout(layout);
 
@@ -36,8 +36,8 @@ public class UiWelcomeScreen extends JFrame {
             }
         });
 
-          // ActionListener for the docBookingbutton button to load table
-          docBookingbutton.addActionListener(new ActionListener() {
+        // ActionListener for the docBookingbutton button to load table
+        docBookingbutton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 new UiUserDetailsForm(doctors);
                 // myTable.setVisible(true);

@@ -11,21 +11,23 @@ public class Main {
         // wsm.getAllDoctors();
         // wsm.printDoctors();
         // wsm.printAlphabeticalDoctors();
-        
-    //    Doctor d = new Doctor("String name","String surname","String mobileNumber",date,"medicalLicenceNumber","specialisation");
-    //    wsm.addDoctor();
 
-            // wsm.createDummyDocs(3);
-            // wsm.storeData();
-            // wsm.readData();
-            // wsm.printDoctors();
-            // wsm.deleteDoctor();
-            // wsm.printDoctors();
+        // Doctor d = new Doctor("String name","String surname","String
+        // mobileNumber",date,"medicalLicenceNumber","specialisation");
+        // wsm.addDoctor();
 
-            // Frontend only...................................................................................
-            new UiWelcomeScreen(wsm.getAllDoctors());
-            // new DoctorTable();
-            // new DoctorTable(wsm.getAllDoctors());
+        // wsm.createDummyDocs(3);
+        // wsm.storeData();
+        // wsm.readData();
+        // wsm.printDoctors();
+        // wsm.deleteDoctor();
+        // wsm.printDoctors();
+
+        // Frontend
+        // only...................................................................................
+        new UiWelcomeScreen(wsm.getAllDoctors());
+        // new DoctorTable();
+        // new DoctorTable(wsm.getAllDoctors());
 
     }
 

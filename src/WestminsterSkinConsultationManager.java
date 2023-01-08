@@ -3,6 +3,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
@@ -12,6 +13,7 @@ import java.util.List;
 public class WestminsterSkinConsultationManager implements SkinConsultationManager {
 
     Doctor[] doctor = new Doctor[10];
+    List<Consultaion> consultation = new ArrayList<>();
 
     Scanner in = new Scanner(System.in);
 
@@ -244,13 +246,40 @@ public class WestminsterSkinConsultationManager implements SkinConsultationManag
         return Arrays.asList(doctor);
     }
 
-    // public String getAllDoctorNames(){
-    //     String[] myArray = new String[10];
+    // public void createConsultation (){
 
-    //     for(Doctor doc: doctor){
-    //         myArray.ap
-    //     }
-    //     return 
+    // }
+
+    public List<Consultaion> getAllConsultaions() {
+
+        System.out.println("started");
+        System.out.println(consultation);
+        // // System.out.println("start");
+        // // System.out.println(Arrays.asList(doctor));
+        // //Populate the list with data
+        // //Access a repository to retrieve the doctor data and populate the list
+        return consultation;
+    }
+
+    // public void createConsultation(){
+    // consultation =
+    // }
+
+    public void createConsultation(String name, String surname, String mobileNumber, Date dob, Date date, Double cost,
+            String notes) {
+
+        consultation.add(new Consultaion(name, surname, mobileNumber, dob, date, cost, notes));
+
+        System.out.println("Consultation added successfully");
+        // System.out.println(consultation);
+    }
+    // public String getAllDoctorNames(){
+    // String[] myArray = new String[10];
+
+    // for(Doctor doc: doctor){
+    // myArray.ap
+    // }
+    // return
     // }
 
 }

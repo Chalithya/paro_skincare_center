@@ -7,7 +7,7 @@ import java.awt.*;
 import java.util.List;
 
 public class UiDoctorTable {
-	
+
 	public UiDoctorTable(List<Doctor> doctors) {
 
 		// Create a new JTable Object
@@ -17,12 +17,12 @@ public class UiDoctorTable {
 		DefaultTableModel model = new DefaultTableModel();
 
 		// Set Column Titles to the Table Model
-		model.setColumnIdentifiers(new Object[] { 
-			"Name", 
-			"Surname", 
-			"Date of Birth", 
-			"Mobile Number", 
-			"Medical Licence No."  
+		model.setColumnIdentifiers(new Object[] {
+				"Name",
+				"Surname",
+				"Date of Birth",
+				"Mobile Number",
+				"Medical Licence No."
 		});
 
 		// Set the Table Model data to the JTable
@@ -34,12 +34,12 @@ public class UiDoctorTable {
 		// Iterate through the array and add the data to the table model
 		for (Doctor doc : doctors) {
 			if (doc != null) {
-				model.addRow(new Object[] { 
-					doc.getName(), 
-					doc.getSurname(),
-					doc.getDateOfBirth(),
-				 	doc.getMobileNumber(),
-					doc.getMedicalLicenceNumber()
+				model.addRow(new Object[] {
+						doc.getName(),
+						doc.getSurname(),
+						doc.getDateOfBirth(),
+						doc.getMobileNumber(),
+						doc.getMedicalLicenceNumber()
 				});
 			}
 		}
@@ -48,10 +48,11 @@ public class UiDoctorTable {
 		JFrame frame = new JFrame("Doctors List");
 		frame.getContentPane().setLayout(new FlowLayout());
 		frame.getContentPane().add(new JScrollPane(table));
-		frame.setSize(400,400);
-		frame.setLocationRelativeTo(null); 
+		frame.setSize(400, 400);
+		frame.setLocationRelativeTo(null);
 		frame.pack();
 		frame.setVisible(true);
+
 	}
 
 }
