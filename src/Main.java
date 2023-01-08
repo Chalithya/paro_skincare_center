@@ -1,5 +1,6 @@
 import java.util.Date;
 
+import ui.PatientForm;
 import ui.WelcomeScreen;
 public class Main {
     public static void main(String[] args) {
@@ -23,7 +24,8 @@ public class Main {
             // wsm.printDoctors();
 
             // Frontend only...................................................................................
-            new WelcomeScreen();
+//            new WelcomeScreen();
+            new PatientForm();
 
     }
 
