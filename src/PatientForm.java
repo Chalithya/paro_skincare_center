@@ -1,5 +1,3 @@
-package ui;
-
 import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
